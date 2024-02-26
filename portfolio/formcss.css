@@ -1,0 +1,57 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,82,255,1) 0%, rgba(0,255,244,1) 100%);
+	overflow: hidden;
+	font-family: Verdana;
+}
+
+.main {
+	background-color: white;
+	width: 960px;
+	height: 617px;
+	border-radius: 15px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px black;
+	animation: mover 1s linear forwards;
+}
+
+.contain {
+	margin-left: 30px;
+}
+
+.contain > h1 {
+	text-decoration: underline;
+}
+
+.contain > p {
+	display: inline;
+}
+
+input, textarea {
+	border: 2px solid black;
+}
+
+.ast {
+	display: inline;
+	color: red;
+}
+
+@keyframes mover {
+	from {
+		transform: translateY(-15px);
+		opacity: 0%;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 100%;
+	}
+}
+
+.button:hover {
+	transform: scale(1.1);
+}

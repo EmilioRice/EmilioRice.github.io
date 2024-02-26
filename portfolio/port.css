@@ -1,0 +1,120 @@
+body {
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,82,255,1) 0%, rgba(0,255,244,1) 100%);
+	font-family: Verdana;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 35% auto;
+	grid-template-rows: 230px auto;
+	background-color: white;
+	width: 1344px;
+	height: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	box-shadow: 5px 5px 10px black;
+	border-radius: 15px;
+	animation: mover 1s linear forwards;
+}
+
+.barra {
+	grid-column: 1 / span 2;
+	background-color: gray;
+}
+
+.barra > img {
+	width: 15%;
+	border-radius: 50%;
+	margin-top: 15px;
+	margin-left: 130px;
+}
+
+.barra > img:hover {
+	transform: scale(1.05);
+	transition-duration: 0.5s;
+}
+
+.nombre {
+	float: right;
+	margin-right: 150px;
+	text-align: justify;
+}
+
+.nombre > h1 {
+	font-size: 40px;
+}
+
+.barra:hover {
+	background-color: rgb(145, 145, 145);
+	transition-duration: 0.5s;
+}
+
+.lateral {
+	background-color: lightgray;
+}
+
+.bloque {
+	text-align: justify;
+	margin-left: 30px;
+}
+
+.bloque > h1 {
+	text-decoration: underline;
+}
+
+li {
+	padding-top: 10px;
+}
+
+.bloque > a {
+	text-decoration: none;
+	color: blue;
+}
+
+.lateral:hover {
+	background-color: rgb(225, 225, 225);
+	transition-duration: 0.5s;
+}
+
+.bloque:hover {
+	transform: scale(1.05);
+	margin-left: 30px;
+	transition-duration: 0.5s;
+}
+
+.icono {
+	width: 40px;
+	height: 40px;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+.icono > img {
+	position: relative;
+	width: 60%;
+	margin-top: 8px;
+	margin-left: 8px;
+}
+
+.frase {
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -30px;
+}
+
+hr {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+@keyframes mover {
+	from {
+		transform: translateY(-15px);
+		opacity: 0%;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 100%;
+	}
+}
